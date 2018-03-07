@@ -2,6 +2,10 @@
 @section('title', 'Fornite Tracker')
 @section('content')
 
+<?php if (!empty($fortniteResponse)) {
+    dump($fortniteResponse);
+} ?>
+
 <!-- SOLO -->
 <h1 id="stats1">SOLO STATS</h1>
 <div id="solo1" class="row">
@@ -103,8 +107,12 @@
         </div>
     </div>
 </div>
-<input id="playerName" type="text" name="playerName">
-<button id="button" name="button">Show Stats</button>
+<form class="" action="get_player" method="post">
+    @csrf
+    <input id="playerName" type="text" name="playerName">
+    <button id="button" type="submit" name="button">Show Stats</button>
+</form>
+
 <table id="graph" class="table">
     <thead>
         <tr>
@@ -146,7 +154,7 @@
                 <div id="mainOne" class="card" style="width: 110px;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item" style="height:100px;background:#2f1c5c;">K/D</br>Ratio</li>
-                        <li class="list-group-item" style="background:#2f1c5c"></li>
+                        <li class="list-group-item" style="background:#2f1c5c">{{ $fortniteResponse['lifeTimeStats'][11]['value'] }}</li>
                     </ul>
                 </div>
             </div>
