@@ -24,14 +24,14 @@
           <div class="form-group">
             <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
           </div>
-          <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit</button>
+          <button type="button" id="submit" name="submit" class="btn btn-outline-dark pull-right" style="color:white;">Submit</button>
         </form>
       </div>
     </div>
     <div id="detailsbg" class="col-md-4">
       <div class="contact-details">
         <br style="clear:both">
-        <h5 style="margin-bottom: 10px; color: black;"><b>Top Weapons</b></h5>
+        <h5 style="margin-bottom: 10px; color: white;"><b>Top Weapons</b></h5>
         <hr>
           <img id="scar" src="https://i.ytimg.com/vi/SZtI23XEhSg/maxresdefault.jpg" />
         <br>
