@@ -136,6 +136,7 @@
     <tbody>
     </tbody>
 </table>
+@if (!empty($fortniteResponse))
 <div id="card" class="card">
     <h5 id="header" class="card-header">Featured</h5>
     <div id="mini-body" class="card-body">
@@ -259,5 +260,6 @@
         </div>
     </div>
 </div>
+@endif
 </div>
 @endsection
