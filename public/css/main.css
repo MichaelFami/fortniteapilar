@@ -105,8 +105,33 @@ img {
     background: #231f2d;
     color: white;
 }
+#mainEight, #mainNine, #mainTen, #mainEleven, #mainTwelve, #mainThirteen, #mainFourteen {
+    border: 1px solid white;
+    background: #231f2d;
+    color: white;
+}
 .list-group-item {
     border: 1px solid white;
+}
+#bigColumn {
+    background: #2f1c5d;
+    border: 1px solid white;
+}
+#gamerTag {
+border-bottom: 1px solid white;
+margin-bottom: 10px;
+background: #2f1c5d;
+color: white;
+}
+#GamerTAG {
+    margin-left: 201px;
+    font-size: 20px;
+    margin-top: 17px;
+    margin-bottom: 1rem;
+}
+.STATS {
+margin-top: 35px;
+margin-bottom: 20px;
 }
 /*-----------------
 -------------------
