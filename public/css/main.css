@@ -1,4 +1,8 @@
-/* design html */
+/*-----------------
+-------------------
+NAVBAR
+-------------------
+-----------------*/
 #con {
     background-image: url("https://images.greenmangaming.com/601f91f4affe48e8b990515b8ef4879e/fa9e235406ca49d292a84813b7111fac.jpg");
     background-size: cover;
@@ -11,6 +15,14 @@
     margin-top: 96px;
     margin-left: 195px;
 }
+.nav-item:hover {
+    border-bottom: 1px solid transparent;
+}
+/*-----------------
+-------------------
+HOME
+-------------------
+-----------------*/
 body {
     background: #221e2d
 }
@@ -47,7 +59,60 @@ img {
     color: white;
     background: #2f1c5d;
 }
-/* contact html */
+#mini-body {
+    background: #2f1c5d
+}
+#header {
+    background: #2f1c5d;
+    color: white;
+    border-bottom: 1px solid white;
+}
+#deathHawk {
+    font-size: 16px;
+}
+#oneVSone {
+    margin-bottom: 15px;
+    background:#2f1c5d;
+    color: white;
+    border: 1px solid white;
+}
+#twoVStwo {
+    margin-bottom: 15px;
+    background:#2f1c5d;
+    color: white;
+    border: 1px solid white;
+}
+#squadVSsquad {
+    margin-bottom: 15px;
+    background:#2f1c5d;
+    color: white;
+    border: 1px solid white;
+}
+#tinyOne {
+    float:left;
+}
+#tinyTwo {
+    float:right;
+}
+#mainOne {
+    margin: 0, 15px;
+}
+#cardRowOne {
+    margin-bottom: 60px;
+}
+#mainOne, #mainTwo, #mainThree, #mainFour, #mainFive, #mainSix, #mainSeven {
+    border: 1px solid white;
+    background: #231f2d;
+    color: white;
+}
+.list-group-item {
+    border: 1px solid white;
+}
+/*-----------------
+-------------------
+ CONTACT
+-------------------
+-----------------*/
 #hello {
     background: #5e576b;
 }
@@ -75,12 +140,18 @@ img {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+/*-----------------
+-------------------
+ FOOTER
+-------------------
+-----------------*/
 #foot {
     color: white;
     background: black;
     height: 200px;
 }
 #copy {
-    margin-left: 634px;
+    padding: 87px;
+    margin-top: 124px;
+    margin-left: 554px;
 }
