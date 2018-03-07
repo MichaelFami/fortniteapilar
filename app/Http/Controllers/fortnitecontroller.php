@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\fortnitetracker;
 
-class fortnitecontroller extends Controller
+class FortniteController extends Controller
 {
     public function getFortniteStat()
     {
