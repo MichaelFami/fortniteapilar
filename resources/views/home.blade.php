@@ -113,7 +113,7 @@
     <button id="button" type="submit" name="button">Show Stats</button>
 </form>
 
-<table id="graph" class="table">
+<!-- <table id="graph" class="table">
     <thead>
         <tr>
             <th> Name </th>
@@ -135,10 +135,10 @@
     </thead>
     <tbody>
     </tbody>
-</table>
+</table> -->
 @if (!empty($fortniteResponse))
 <div id="card" class="card">
-    <h5 id="header" class="card-header">Featured</h5>
+    <h5 id="header" class="card-header">{{ $fortniteResponse['epicUserHandle']}}</h5>
     <div id="mini-body" class="card-body">
         <h5 id="studies" class="card-title"></h5>
         <p class="card-text"></p>
@@ -164,7 +164,7 @@
                 <div id="mainTwo" class="card" style="width: 110px;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item" style="height: 100px;background:#2f1c5c">Kills</br> per</br> Min.</li>
-                        <li class="list-group-item" style="background:#2f1c5c"></li>
+                        <li class="list-group-item" style="background:#2f1c5c">{{ $fortniteResponse['lifeTimeStats'][10]['value'] }}</li>
                     </ul>
                 </div>
             </div>
@@ -173,7 +173,7 @@
                 <div id="mainThree" class="card" style="width: 110px;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item" style="height:100px;background:#2f1c5c">Total</br> Wins</li>
-                        <li class="list-group-item"style="background:#2f1c5c"></li>
+                        <li class="list-group-item"style="background:#2f1c5c">{{ $fortniteResponse['lifeTimeStats'][8]['value'] }}</li>
                     </ul>
                 </div>
             </div>
@@ -182,7 +182,7 @@
                 <div id="mainFour" class="card" style="width: 110px;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item" style="height: 100px;background:#2f1c5c">Win </br>%</li>
-                        <li class="list-group-item"style="background:#2f1c5c"></li>
+                        <li class="list-group-item"style="background:#2f1c5c">{{ $fortniteResponse['lifeTimeStats'][9]['value'] }}</li>
                     </ul>
                 </div>
             </div>
@@ -191,7 +191,7 @@
                 <div id="mainFive" class="card" style="width: 110px;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"style="height: 100px;background:#2f1c5c">Total</br> Games</br> Played</li>
-                        <li class="list-group-item"style="background:#2f1c5c"></li>
+                        <li class="list-group-item"style="background:#2f1c5c">{{ $fortniteResponse['lifeTimeStats'][7]['value'] }}</li>
                     </ul>
                 </div>
             </div>
@@ -200,7 +200,7 @@
                 <div id="mainSix" class="card" style="width: 110px;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"style="height: 100px;background:#2f1c5c">Avg.</br> Survival</br> Time</li>
-                        <li class="list-group-item"style="background:#2f1c5c"></li>
+                        <li class="list-group-item"style="background:#2f1c5c">{{ $fortniteResponse['lifeTimeStats'][14]['value'] }}</li>
                     </ul>
                 </div>
             </div>
@@ -209,7 +209,7 @@
                 <div id="mainSeven" class="card" style="width: 110px;">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"style="height: 100px;background:#2f1c5c">Total</br> Time</br> Played</li>
-                        <li class="list-group-item"style="background:#2f1c5c"></li>
+                        <li class="list-group-item"style="background:#2f1c5c">{{ $fortniteResponse['lifeTimeStats'][13]['value'] }}</li>
                     </ul>
                 </div>
             </div>
