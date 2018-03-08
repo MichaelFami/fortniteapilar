@@ -28,5 +28,6 @@ class FortniteController extends Controller
             'fortniteResponse' => $fortniteResponse
         ];
         return view('home')->with($data);
+        return view('testinggrounds')->with($data);
     }
 }
