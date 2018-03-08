@@ -8,8 +8,8 @@
 <form class="" action="get_player" method="post">
     @csrf
     <button id="button" type="submit" name="button">Show Stats</button>
-    <input id="playerName" type="text" name="playerName" placeholder="Player1">
-    <input id="player2Name" type="text" name="playerName" placeholder="Player2">
+    <input id="playerName" type="text" name="leftPlayer" placeholder="Player1">
+    <input id="player2Name" type="text" name="rightPlayer" placeholder="Player2">
 </form>
 
 <table id="graph" class="table">

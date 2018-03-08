@@ -6,10 +6,8 @@ use Illuminate\Http\Request;
 
 class FortniteController extends Controller
 {
-    public function getFortniteStat(Request $request)
+    protected function getPlayer($playerName)
     {
-        // $console = $request->console;
-        $playerName = $request->playerName;
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "https://api.fortnitetracker.com/v1/profile/psn/$playerName");
@@ -22,12 +20,24 @@ class FortniteController extends Controller
         $response = curl_exec($ch);
         curl_close($ch);
 
-        $fortniteResponse = json_decode($response, true);
+        return json_decode($response, true);
+    }
 
-        $data = [
-            'fortniteResponse' => $fortniteResponse
-        ];
-        
+    public function getFortniteStat(Request $request)
+    {
+        $data = [];
+
+        if (!empty($request->leftPlayer)) {
+            $leftPlayer = self::getPlayer($request->leftPlayer);
+            $data['leftPlayer'] = $leftPlayer;
+        }
+
+        if (!empty($request->rightPlayer)) {
+            sleep(2);
+            $rightPlayer = self::getPlayer($request->rightPlayer);
+            $data['rightPlayer'] = $rightPlayer;
+        }
+
         return view('home')->with($data);
     }
 }
