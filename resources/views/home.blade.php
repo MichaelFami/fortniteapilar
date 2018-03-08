@@ -158,7 +158,7 @@
                 <div class="col-6" style="border-right: 1px solid white;">
                     <div id="gamer" class="row">
                         <ul class="list-group list-group-flush">
-                            <p id="TAG">{{$leftPlayer['epicUserHandle']}}</p>
+                            <p id="TAG">{{$rightPlayer['epicUserHandle']}}</p>
                         </ul>
                     </div>
                     <div class="row STATS">
