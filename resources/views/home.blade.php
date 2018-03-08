@@ -7,10 +7,9 @@
 
 <form class="" action="get_player" method="post">
     @csrf
-    <input id="playerName" type="text" name="playerName">
     <button id="button" type="submit" name="button">Show Stats</button>
-    <button id="button2" type="submit" name="button">Show Stats</button>
-    <input id="player2Name" type="text" name="playerName">
+    <input id="playerName" type="text" name="playerName" placeholder="Player1">
+    <input id="player2Name" type="text" name="playerName" placeholder="Player2">
 </form>
 
 <table id="graph" class="table">
@@ -53,7 +52,7 @@
                         <div class="col-6">
                             <div id="mainOne" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height:100px;background:#2f1c5c;">Hello</li>
+                                    <li id="pic" class="list-group-item" ></li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -188,7 +187,7 @@
                         <div class="col-6">
                             <div id="One" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height:100px;background:#2f1c5c;">Hello</li>
+                                    <li id="picture2" class="list-group-item"></li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>

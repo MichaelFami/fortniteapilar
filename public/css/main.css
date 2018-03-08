@@ -24,12 +24,9 @@ HOME
 -------------------
 -----------------*/
 body {
-    background-image: url('https://static1.squarespace.com/static/59b81f50c534a5c6ac83fae6/t/5a71085bc830258d3672023e/1517357148221/maxresdefault.jpg?format=2500w');
-    background-size: cover;
+    background-image:url('https://static1.squarespace.com/static/59b81f50c534a5c6ac83fae6/t/5a71085bc830258d3672023e/1517357148221/maxresdefault.jpg?format=2500w');
 }
 #solo1 {
-    /* background-image: url("http://battlegroundsvideos.com/wp-content/uploads/2018/02/gzFPeMIRVjAhqdefault-400x200.jpg"); */
-    /* background-size: contain; */
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -167,6 +164,16 @@ color: white;
     background: #231f2d;
     color: white;
 }
+#pic {
+height:100px;
+background-image:url('https://scontent.cdninstagram.com/vp/eb8423f1cffa2d03b16ee602784992e6/5B1CC6CE/t51.2885-15/s320x320/e35/27581536_329193167593787_3508601802494836736_n.jpg');
+background-size: cover;
+}
+#picture2 {
+height:100px;
+background-image:url('https://cdn.gamerant.com/wp-content/uploads/fortnite-season-3-battle-pass-skin.jpg.optimal.jpg');
+background-size: cover;
+}
 /*-----------------
 -------------------
  CONTACT
@@ -205,10 +212,10 @@ color: white;
 -------------------
 -----------------*/
 #foot {
-    color: white;
-    background-image:url('http://img.appledaily.com.tw/images/ReNews/20140607/640_9ee5fe019d8dea198111a1b9f7cc134f.jpg');
-    background-size: cover;
-    height: 200px;
+height: 200px;
+color: white;
+background-image:url('http://img.appledaily.com.tw/images/ReNews/20140607/640_9ee5fe019d8dea198111a1b9f7cc134f.jpg');
+background-size: cover;
 }
 #copy {
     padding: 87px;
