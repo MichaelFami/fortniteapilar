@@ -1,13 +1,14 @@
 @extends('master') @section('title', 'Fornite Tracker') @section('content')
 
 
-<form class="" action="get_player" method="post">
+<form class="searchBar" action="get_player" method="post">
     @csrf
-    <button id="button" type="submit" name="button">Show Stats</button>
     <input id="playerName" type="text" name="leftPlayer" placeholder="Player1">
+    <button id="button" type="submit" class="btn btn-outline-light" name="button">Compare</button>
     <input id="player2Name" type="text" name="rightPlayer" placeholder="Player2">
 </form>
 
+@if (!empty($leftPlayer) && !empty($rightPlayer))
 <div class="container">
     <div id="bigColumn" class="row">
         <div class="col">
@@ -293,4 +294,5 @@
         </div>
     </div>
 </div>
+@endif
 @endsection
