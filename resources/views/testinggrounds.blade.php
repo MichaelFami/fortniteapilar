@@ -37,6 +37,9 @@
     </tbody>
 </table>
 <div class="container">
+    @if (!empty($fortniteResponse))
+
+
     <div id="bigColumn" class="row">
         <!-- Column 1 --------------------------------------->
         <div class="col-6" style="border-right: 1px solid white;">
@@ -201,6 +204,7 @@
 
         </div>
     </div>
+    @endif
 </div>
 
 @endsection
