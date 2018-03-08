@@ -212,7 +212,36 @@ color: white;
     border-radius: 40%;
     border: 1px solid white;
 }
+#beerus{
+    border-radius: 40%;
+    border: 1px solid white;
+}
+#goku{
+    border-radius: 40%;
+    border: 1px solid white;
+}
 
 #chris{
     color: white;
+}
+#mike{
+    color:white;
+}
+#brandon{
+    color:white;
+}
+.mike{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+.chris{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+.brandon{
+    color: white;
+    font-size: 14px;
+    text-align: center;
 }
