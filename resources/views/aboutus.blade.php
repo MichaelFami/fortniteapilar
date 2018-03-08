@@ -22,7 +22,7 @@
         <div id="colThree" class="col-4">
             <img id="goku" src="images/goku.png" />
             <h3 id="brandon">Brandon Romo<h3>
-                <p class="brandon">Brandon is a graduate of PSJA North Early College Highschool in Pharr, Texas. He is the best of the best in this program. His girlfriend is also the best of her class in UX Designing (because she's the only one).</p>
+                <p class="brandon">Brandon is a graduate of PSJA North Early College Highschool in Pharr, Texas. After a semester at South Texas College he was presented with an opportunity to  study at Valley Technical Academy. He now studies to become a Full Stack Developer.</p>
         </div>
     </div>
 
