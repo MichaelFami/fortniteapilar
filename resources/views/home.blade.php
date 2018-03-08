@@ -1,6 +1,18 @@
-@extends('master') @section('title', 'Fornite Tracker') @section('content')
-<input id="playerName" type="text" name="playerName">
-<button id="button" name="button">Show Stats</button>
+@extends('master')
+@section('title', 'Fornite Tracker')
+@section('content')
+
+<?php if (!empty($fortniteResponse)) {
+    dump($fortniteResponse);
+} ?>
+
+
+<form class="" action="get_player" method="post">
+    @csrf
+    <input id="playerName" type="text" name="playerName">
+    <button id="button" type="submit" name="button">Show Stats</button>
+</form>
+
 <table id="graph" class="table">
     <thead>
         <tr>
