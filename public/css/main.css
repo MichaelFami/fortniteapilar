@@ -58,6 +58,7 @@ img {
     border: 1px solid white;
     background: black;
     color: white;
+    padding-left: 10px;
 }
 .searchBar {
     margin-left: 289px;
@@ -75,6 +76,7 @@ img {
     border: 1px solid white;
     background: black;
     color: white;
+    padding-left: 10px;
 }
 #graph {
     color: white;
