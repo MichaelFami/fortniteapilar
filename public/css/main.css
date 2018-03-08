@@ -53,6 +53,10 @@ img {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+#player2Name {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 #graph {
     color: white;
     background: #2f1c5d;
