@@ -133,6 +133,28 @@ color: white;
 margin-top: 35px;
 margin-bottom: 20px;
 }
+#gamer {
+border-bottom: 1px solid white;
+margin-bottom: 10px;
+background: #2f1c5d;
+color: white;
+}
+#TAG {
+    margin-left: 201px;
+    font-size: 20px;
+    margin-top: 17px;
+    margin-bottom: 1rem;
+}
+#One, #Two, #Three, #Four, #Five, #Six, #Seven {
+    border: 1px solid white;
+    background: #231f2d;
+    color: white;
+}
+#Eight, #Nine, #Ten, #Eleven, #Twelve, #Thirteen, #Fourteen {
+    border: 1px solid white;
+    background: #231f2d;
+    color: white;
+}
 /*-----------------
 -------------------
  CONTACT
