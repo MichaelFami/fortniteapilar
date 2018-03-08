@@ -9,7 +9,10 @@
     @csrf
     <input id="playerName" type="text" name="playerName">
     <button id="button" type="submit" name="button">Show Stats</button>
+    <button id="button2" type="submit" name="button">Show Stats</button>
+    <input id="player2Name" type="text" name="playerName">
 </form>
+
 <table id="graph" class="table">
     <thead>
         <tr>

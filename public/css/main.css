@@ -24,7 +24,8 @@ HOME
 -------------------
 -----------------*/
 body {
-    background: #221e2d
+    background-image: url('https://static1.squarespace.com/static/59b81f50c534a5c6ac83fae6/t/5a71085bc830258d3672023e/1517357148221/maxresdefault.jpg?format=2500w');
+    background-size: cover;
 }
 #solo1 {
     /* background-image: url("http://battlegroundsvideos.com/wp-content/uploads/2018/02/gzFPeMIRVjAhqdefault-400x200.jpg"); */
@@ -54,6 +55,17 @@ img {
 #playerName {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+#player2Name {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 3px;
+    float: right;
+}
+#button2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    float: right;
 }
 #graph {
     color: white;
@@ -194,7 +206,8 @@ color: white;
 -----------------*/
 #foot {
     color: white;
-    background: black;
+    background-image:url('http://img.appledaily.com.tw/images/ReNews/20140607/640_9ee5fe019d8dea198111a1b9f7cc134f.jpg');
+    background-size: cover;
     height: 200px;
 }
 #copy {
