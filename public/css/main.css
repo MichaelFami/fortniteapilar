@@ -63,6 +63,9 @@ img {
 .searchBar {
     margin-left: 289px;
 }
+.gVr {
+    font-weight: bold;
+}
 #button {
     height: 43px;
     width: 124px;
