@@ -7,9 +7,11 @@
 
 <form class="" action="get_player" method="post">
     @csrf
-    <input id="playerName" type="text" name="playerName">
     <button id="button" type="submit" name="button">Show Stats</button>
+    <input id="playerName" type="text" name="playerName" placeholder="Player1">
+    <input id="player2Name" type="text" name="playerName" placeholder="Player2">
 </form>
+
 <table id="graph" class="table">
     <thead>
         <tr>
@@ -50,7 +52,7 @@
                         <div class="col-6">
                             <div id="mainOne" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height:100px;background:#2f1c5c;">K/D</br>Ratio</li>
+                                    <li id="pic" class="list-group-item" ></li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -58,7 +60,7 @@
                         <div class="col-6">
                             <div id="mainTwo" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Kills</br> per</br> Min.</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">K/D</br>Ratio</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -68,7 +70,7 @@
                         <div class="col-6">
                             <div id="mainThree" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height:100px;background:#2f1c5c">Total</br> Wins</li>
+                                    <li class="list-group-item" style="height:100px;background:#2f1c5c">Kills</br> per</br> Min.</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -76,7 +78,7 @@
                         <div class="col-6">
                             <div id="mainFour" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Win </br>%</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Total</br> Wins</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -86,7 +88,7 @@
                         <div class="col-6">
                             <div id="mainFive" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Total</br> Games</br> Played</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Win </br>%</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -94,7 +96,7 @@
                         <div class="col-6">
                             <div id="mainSix" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Avg.</br> Survival</br> Time</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Total</br> Games</br> Played</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -104,7 +106,7 @@
                         <div class="col-6">
                             <div id="mainSeven" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Total</br> Time</br> Played</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Avg.</br> Survival</br> Time</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -112,7 +114,7 @@
                         <div class="col-6">
                             <div id="mainEight" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Hello</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Total</br> Time</br> Played</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -185,7 +187,7 @@
                         <div class="col-6">
                             <div id="One" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height:100px;background:#2f1c5c;">K/D</br>Ratio</li>
+                                    <li id="picture2" class="list-group-item"></li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -193,7 +195,7 @@
                         <div class="col-6">
                             <div id="Two" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Kills</br> per</br> Min.</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">K/D</br>Ratio</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -203,7 +205,7 @@
                         <div class="col-6">
                             <div id="Three" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height:100px;background:#2f1c5c">Total</br> Wins</li>
+                                    <li class="list-group-item" style="height:100px;background:#2f1c5c">Kills</br> per</br> Min.</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -211,7 +213,7 @@
                         <div class="col-6">
                             <div id="Four" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Win </br>%</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Total</br> Wins</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -221,7 +223,7 @@
                         <div class="col-6">
                             <div id="Five" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Total</br> Games</br> Played</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Win </br>%</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -229,7 +231,7 @@
                         <div class="col-6">
                             <div id="Six" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Avg.</br> Survival</br> Time</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Total</br> Games</br> Played</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -239,7 +241,7 @@
                         <div class="col-6">
                             <div id="Seven" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Total</br> Time</br> Played</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Avg.</br> Survival</br> Time</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
@@ -247,7 +249,7 @@
                         <div class="col-6">
                             <div id="Eight" class="card" style="width: 110px;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Hello</li>
+                                    <li class="list-group-item" style="height: 100px;background:#2f1c5c">Total</br> Time</br> Played</li>
                                     <li class="list-group-item" style="background:#2f1c5c"></li>
                                 </ul>
                             </div>
