@@ -36,7 +36,7 @@
         </nav>
         <div class="row">
             <div class="col">
-                <img id="logo" src="images/imageedit_1_4758736319.png" />
+                <img id="logo" src="images/logo2.png" />
             </div>
         </div>
     </div>
