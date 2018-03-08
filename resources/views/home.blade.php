@@ -12,9 +12,12 @@
     <div id="bigColumn" class="row">
         <div class="col">
 
-            <!-- Column 1 --------------------------------------->
 
             <div class="row">
+                @if (!empty($leftPlayer))
+
+
+                <!-- Column 1 --------------------------------------->
                 <div class="col-6" style="border-right: 1px solid white;">
                     <div id="gamerTag" class="row">
                         <ul class="list-group list-group-flush">
@@ -149,6 +152,8 @@
                     </div>
 
                 </div>
+                @endif
+                @if(!empty($rightPlayer))
                 <!-- Column 2  ------------------------------------->
                 <div class="col-6" style="border-right: 1px solid white;">
                     <div id="gamer" class="row">
@@ -283,6 +288,7 @@
                         </div>
                     </div>
                 </div>
+                @endif
             </div>
         </div>
     </div>
