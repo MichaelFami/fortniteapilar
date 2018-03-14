@@ -26,4 +26,8 @@ Route::get('/aboutus', function () {
     return view('aboutus');
 });
 
+Route::get('/tester', function () {
+    return view('tester');
+});
+
 Route::post('/get_player', 'FortniteController@getFortniteStat');
