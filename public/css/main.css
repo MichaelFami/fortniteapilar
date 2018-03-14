@@ -49,6 +49,12 @@ img {
     margin-bottom: 85px;
     color: white;
 }
+#button {
+    height: 45px;
+}
+#check {
+    margin-left: 185px;
+}
 #playerName {
     margin-top: 50px;
     margin-bottom: 50px;
