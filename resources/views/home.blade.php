@@ -5,10 +5,10 @@
 } ?>
 
 
-<form class="" action="get_player" method="post">
+<form id="check" class="" action="get_player" method="post">
     @csrf
-    <button id="button" type="submit" name="button">Show Stats</button>
     <input id="playerName" type="text" name="playerName" placeholder="Player1">
+    <button id="button" class="btn btn-outline-light" type="submit" name="button">Compare</button>
     <input id="player2Name" type="text" name="playerName" placeholder="Player2">
 </form>
 

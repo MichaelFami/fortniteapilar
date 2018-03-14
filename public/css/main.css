@@ -49,13 +49,33 @@ img {
     margin-bottom: 20px;
     color: white;
 }
+#button {
+    height: 45px;
+}
+#check {
+    margin-left: 185px;
+}
 #playerName {
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-right: 45px;
+    height: 40px;
+    width: 275px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    padding-left: 10px;
 }
 #player2Name {
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 45px;
+    height: 40px;
+    width: 275px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    padding-left: 10px;
 }
 #graph {
     color: white;
